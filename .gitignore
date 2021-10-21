@@ -6,3 +6,14 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+
+# MacOS
+.DS_Store
+
+# IntelliJ
+.idea/*
+*.iml
+
+# Compiled output
+*.class
+out/*
