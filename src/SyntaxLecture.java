@@ -24,6 +24,10 @@ public class SyntaxLecture {
 
         System.out.println("This is almostPi: " + almostPi);
 
+        boolean complete = true;
+
+        float myNumber = (float) 3.14;
+
 
     }
 
