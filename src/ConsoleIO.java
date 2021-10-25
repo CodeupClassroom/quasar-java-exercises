@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 public class ConsoleIO {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
+        scanner.useDelimiter("\n");
 
 //        String name = "Shanshan";
 //        System.out.printf("Hello there, %s. Nice to see you.\n", name);
@@ -15,17 +16,14 @@ public class ConsoleIO {
 //
 //        System.out.printf(":) %s , %s!", cohortName, cohortName);
 
-        System.out.print("Enter something: ");
+        System.out.print("Enter something thrice: ");
 
-        String userInput = scanner.nextLine();
+        String userInput = scanner.next();
+        String userInput2 = scanner.next();
+        String userInput3 = scanner.next();
 
-        System.out.print("Enter something 2: ");
+//        String userInput2 = scanner.nextLine();
 
-        String userInput2 = scanner.nextLine();
-
-        System.out.printf("You entered %% %s and %s", userInput, userInput2);
-
+        System.out.printf("We've gotten %s, %s, %s", userInput, userInput2, userInput3);
     }
-
-
 }
