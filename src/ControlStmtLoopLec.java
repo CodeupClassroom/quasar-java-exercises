@@ -28,21 +28,23 @@ public class ControlStmtLoopLec {
 //        }
 
         int caseSwitch = 3;
-//        char userInput = 'y';
+        String userInput = "yes";
 
-//        switch (userInput){
-//            case 1:
-//                System.out.println("Case 1");
-//                break;
-//            case 'y':
-//                System.out.println("Case 2");
-//                break;
-//            default:
-//                System.out.println("Default case");
-//                break;
-//
-//
-//        }
+        switch (userInput){
+            case "no":
+                System.out.println("Case 1");
+                break;
+            case "yes":
+                System.out.println("Case 2");
+                break;
+            default:
+                System.out.println("Default case");
+                break;
+
+
+        }
+
+
 //        char userInput = 'n';
 //        do {
 //            System.out.println("du hast");
@@ -54,14 +56,14 @@ public class ControlStmtLoopLec {
 //    }
 //
 //
-        for(int i = 1; i < 100; i++){
-
-            if (i % 2 == 0){
-               continue;
-            }
-            System.out.println(i);
-
-        }
+//        for(int i = 1; i < 100; i++){
+//
+//            if (i % 2 == 0){
+//               continue;
+//            }
+//            System.out.println(i);
+//
+//        }
 
     }
 }
