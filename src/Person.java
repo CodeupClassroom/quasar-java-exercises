@@ -1,62 +1,64 @@
 public class Person {
-    //A class: This is the template or a blueprint for a 'PERSON'
+    // Create Person class inside of src that has a private name property that is a string, and the following methods:
+    private String name;
 
-    //instance variables
-    public String firstName;
-    public String lastName;
-    public int age;
-
-    //instance method
-    public String joinChat(){
-      return lastName + " , " + firstName + " has joined the chat!";
-    };
-
-    //make a static property - representing the world population
-    public static long worldPop = 7_900_000_000L;
-
-
-
-    public static void main(String[] args) {
-        Person ken = new Person();
-        Person mary = new Person();
-
-        mary.firstName = "Mary";
-        mary.lastName = "White";
-//        Scanner sc = new Scanner(System.in); //We've seen this in scanner :)
-
-        ken.firstName = "Ken";
-        ken.lastName = "Howell";
-
-        System.out.println("ken = " + ken);
-        System.out.println(ken.firstName + " " + ken.lastName + " is my name!");
-        System.out.printf("%s %s is my name!%n", ken.firstName, ken.lastName);
-
-        System.out.println(ken.joinChat());
-        System.out.println();
-        System.out.println(mary.firstName + " " + mary.lastName + " is my name!");
-        System.out.println(mary.joinChat());
-
-        System.out.println("worldPop = " + worldPop);
-
-        Person douglas = new Person();
-        douglas.firstName = "Douglas";
-        douglas.lastName = "Hirsh";
-
-        //Douglas didn't get counted in the worldPop :O how would I add him into our count?
-
-        //Would I - access the variable alone?
-        //Maybe instead: Access through the class name. . and dot notation
-        Person.worldPop += 1;
-
-        System.out.println("worldPop with Douglas :D = " + worldPop);
-        System.out.println(douglas.worldPop); //Again: this WILL work, but it is NOT PROPER CODE and NOT BEST PRACTICE
-
-        //Can we . . talk to Person.firstName??
-
-//        System.out.println(Person.firstName); //CTE - no going forward until we fix this
-
-
+    // The class should have a constructor that accepts a `String` value and sets
+    //the person's name to the passed string.
+    // constructor
+    public Person(String name) {
+        this.name = name;
     }
 
+    public String getName(){
+        //TODO: return the person's name
+        return this.name;
+    }
+
+    public void setName(String name){
+        //TODO: change the name property to the passed value
+        this.name = name;
+    }
+    public void sayHello(){
+        //TODO: print a message to the console using the person's name
+        System.out.println("Hello, there " + this.name);
+    }
+
+    // Create a `main` method on the class that creates a new `Person` object and
+    //tests the above methods.
+    public static void main(String[] args) {
+//        Person shan = new Person("Shanshan");
+//
+//        String shanName = shan.getName();
+//        String shanName2 = shan.name;
+//        System.out.println("shanName = " + shanName);
+//        System.out.println("shanName2 = " + shanName2);
+//
+//        shan.setName("Shanshan Su");
+//        System.out.println("shan.getName() = " + shan.getName());
+//
+//        shan.sayHello();
+
+//        Person person1 = new Person("John");
+//        Person person2 = new Person("John");
+//        System.out.println(person1.getName().equals(person2.getName()));
+//        System.out.println("person1 = " + person1);
+//        System.out.println("person2 = " + person2);
+//        System.out.println(person1 == person2);
+
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println("person1 = " + person1);
+//        System.out.println("person2 = " + person2);
+//        System.out.println(person1 == person2);
+
+        Person person1 = new Person("John");
+        Person person2 = person1;
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
+        person2.setName("Jane");
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
+
+    }
 
 }
