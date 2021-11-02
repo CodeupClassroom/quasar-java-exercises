@@ -20,7 +20,7 @@ public class Person {
     }
     public void sayHello(){
         //TODO: print a message to the console using the person's name
-        System.out.println("Hello, there " + this.name);
+        System.out.println("Hello from " + this.name);
     }
 
     // Create a `main` method on the class that creates a new `Person` object and
