@@ -1,11 +1,22 @@
 public class Person {
     // Create Person class inside of src that has a private name property that is a string, and the following methods:
     private String name;
+
+    protected int age;
+
+
     // The class should have a constructor that accepts a `String` value and sets
     //the person's name to the passed string.
     // constructor
+//    public Person(){};
+
     public Person(String name) {
         this.name = name;
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public String getName(){
@@ -19,7 +30,7 @@ public class Person {
     }
     public void sayHello(){
         //TODO: print a message to the console using the person's name
-        System.out.println("Hello, there " + this.name);
+        System.out.println("Hello from " + this.name);
     }
 
     // Create a `main` method on the class that creates a new `Person` object and
