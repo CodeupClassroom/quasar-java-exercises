@@ -1,7 +1,9 @@
 public class Person {
     // Create Person class inside of src that has a private name property that is a string, and the following methods:
     private String name;
+
     protected int age;
+
 
 
     // The class should have a constructor that accepts a `String` value and sets
@@ -35,8 +37,8 @@ public class Person {
     // Create a `main` method on the class that creates a new `Person` object and
     //tests the above methods.
     public static void main(String[] args) {
-//        Person shan = new Person("Shanshan");
-//
+        Person shan = new Person("Shanshan");
+
 //        String shanName = shan.getName();
 //        String shanName2 = shan.name;
 //        System.out.println("shanName = " + shanName);
@@ -56,17 +58,19 @@ public class Person {
 
 //        Person person1 = new Person("John");
 //        Person person2 = person1;
+//        System.out.println("person1 = " + person1.getName());
+//        System.out.println("person2 = " + person2.getName());
 //        System.out.println("person1 = " + person1);
 //        System.out.println("person2 = " + person2);
 //        System.out.println(person1 == person2);
 
-        Person person1 = new Person("John");
-        Person person2 = person1;
-        System.out.println(person1.getName());
-        System.out.println(person2.getName());
-        person2.setName("Jane");
-        System.out.println(person1.getName());
-        System.out.println(person2.getName());
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
+//        person2.setName("Jane");
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
 
     }
 
