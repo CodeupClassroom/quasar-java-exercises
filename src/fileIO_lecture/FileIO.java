@@ -1,5 +1,6 @@
 package fileIO_lecture;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -32,6 +33,8 @@ public class FileIO {
 
       Path definitelyNotAPath =  Paths.get("/nota/actual/filepath.txt");
 
+
+
         System.out.println("Files.exists(definitelyNotAPath) = " + Files.exists(definitelyNotAPath));
         System.out.println("Files.exists(filepath) = " + Files.exists(filepath));
         System.out.println();
@@ -62,7 +65,15 @@ public class FileIO {
         System.out.println("groceriesTxtPath = " + groceriesTxtPath);
         System.out.println("Files.exists(groceriesTxtPath) = " + Files.exists(groceriesTxtPath));
 
-        List<String> groceryList = Arrays.asList("dog food", "coffee creamer", "artisanal bread", "cashew milk"); //Arrays helper class is called here - we use "ASLIST" to make a List datatype of what we passed into our arrays helper class
+
+
+//        List<String> groceryList = Arrays.asList("dog food", "coffee creamer", "artisanal bread", "cashew milk"); //Arrays helper class is called here - we use "ASLIST" to make a List datatype of what we passed into our arrays helper class
+        List<String> groceryList = new ArrayList<>();
+        String myVar = "dog food";
+        groceryList.add(myVar);
+        groceryList.add("bread");
+        groceryList.add("cashew milk");
+        groceryList.add("cat litter");
         System.out.println("groceryList = " + groceryList); //et voila - a grocery list! now we need to write
 
         Files.write(groceriesTxtPath, groceryList);
